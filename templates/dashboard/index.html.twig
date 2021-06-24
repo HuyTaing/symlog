@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+    <h1>Dashboard</h1>
+    <h2>Hello {{ app.user.firstname }} !</h2>
+
+    <a href="{{ path('dashboard.edit') }}" class="btn btn-success mt-3">Modifier le profil</a>
+{% endblock %}
